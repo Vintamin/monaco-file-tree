@@ -73,7 +73,6 @@ export async function readZipFile() {
       const fileName = arr[0];
       const fileContent = arr[1];
       if (fileName.includes(MAC_DEFAULT_DIR)) {
-        console.log("系统文件");
       } else {
         let nameArr = fileName.split("/");
         // 去除最后一项为''的项
@@ -111,7 +110,7 @@ async function createTreeFromArray(nameArr: string[], fileTree: Object, fileCont
         node = { label: label, children: [], id: index, isLeaf: false };
       } else {
         const strContent = await fileContent.async("string");
-        // console.log('strContent', strContent);
+        //
         // 文件
         node = { label: label, value: strContent, id: index, isLeaf: true };
       }
@@ -172,7 +171,6 @@ export async function generateAndZipFolder(data) {
     link.click();
     URL.revokeObjectURL(link.href);
     document.body.removeChild(link);
-    console.log('文件夹已成功压缩为.zip文件');
   });
 
 }

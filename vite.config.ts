@@ -6,6 +6,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [vue()],
   build: {
+    assetsInlineLimit: 0,
     lib: {
       entry: path.resolve(__dirname, 'src/export.ts'),
       name: 'MonacoFileTree',
@@ -18,7 +19,7 @@ export default defineConfig({
         // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
         globals: {
           vue: 'Vue'
-        }
+        },
       }
     }
   }

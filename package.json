@@ -2,7 +2,9 @@
   "name": "monaco-file-tree",
   "version": "0.0.1",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/monaco-file-tree.es.ts",
@@ -30,6 +32,7 @@
     "sass": "^1.69.5",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
+    "vite-plugin-monaco-editor": "^1.1.0",
     "vue-tsc": "^1.8.22"
   }
 }

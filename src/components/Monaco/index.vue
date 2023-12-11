@@ -28,15 +28,15 @@ import "monaco-editor/esm/vs/language/typescript/monaco.contribution"; // 代码
 import { copyToClipboard } from "../utils";
 import { FileTreeItem } from '../FileTree/constant';
 // @ts-ignore
-import editorWorker from 'monaco-editor/esm/vs/editor/editor.worker?worker';
+import editorWorker from 'monaco-editor/esm/vs/editor/editor.worker?worker&inline';
 // @ts-ignore
-import jsonWorker from 'monaco-editor/esm/vs/language/json/json.worker?worker';
+import jsonWorker from 'monaco-editor/esm/vs/language/json/json.worker?worker&inline';
 // @ts-ignore
-import cssWorker from 'monaco-editor/esm/vs/language/css/css.worker?worker';
+import cssWorker from 'monaco-editor/esm/vs/language/css/css.worker?worker&inline';
 // @ts-ignore
-import htmlWorker from 'monaco-editor/esm/vs/language/html/html.worker?worker';
+import htmlWorker from 'monaco-editor/esm/vs/language/html/html.worker?worker&inline';
 // @ts-ignore
-import tsWorker from 'monaco-editor/esm/vs/language/typescript/ts.worker?worker';
+import tsWorker from 'monaco-editor/esm/vs/language/typescript/ts.worker?worker&inline';
 
 // 获取文件树
 const fileTreeData = inject('fileTreeData', ref([]));
@@ -212,7 +212,6 @@ watch(() => props.filePath, (newVal) => {
     // let curFilePath = newVal.join('/');
     // curFilePath = '/' + curFilePath;
     const curFilePath = '/' + newVal;
-    console.log('curFilePath', curFilePath);
     
     // 如果是文件夹则不打开
     if (judgeIsFolder(curFilePath)) {
@@ -419,7 +418,7 @@ function handleCopy() {
 </script>
 <style scoped lang="scss">
 .monaco-area {
-    // height: 100%;
+    height: 100%;
     flex: 1;
     width: 100%;
     display: flex;

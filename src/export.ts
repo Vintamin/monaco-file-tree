@@ -1,2 +1,2 @@
 import MonacoFileTree from './components/index.vue';
-export { MonacoFileTree }
+export default MonacoFileTree;

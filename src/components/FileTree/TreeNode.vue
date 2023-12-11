@@ -58,7 +58,6 @@
             @click-menu-mask="clickMaskLayer"
           />
   </div>
-    <el-collapse-transition>
       <div
         v-show="expanded"
         class="file-tree-node-children"
@@ -75,7 +74,6 @@
           @node-expand="handleChildNodeExpand"
         />
       </div>
-    </el-collapse-transition>
   </div>
 </template>
 <script lang="ts">
@@ -320,7 +318,6 @@ export default defineComponent({
     // 处理文件或文件夹
     const handleFileType = (type: 'file'|'folder') => {
       const parentNode = props.node;
-      console.log('parentNode', parentNode);
       // 暂时先设置成父节点的pathKey，等命名通过后再拼接
       const path = parentNode.data.pathKey;
       const newData = {
@@ -366,7 +363,6 @@ export default defineComponent({
 
 
         } else {
-          console.log('preCurrentNode', preCurrentNode);
           if (preCurrentNode) {
             tree?.store.value.setCurrentNode(preCurrentNode);
             tree?.store.value.setPreCurrentNode(null);

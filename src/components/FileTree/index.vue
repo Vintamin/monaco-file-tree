@@ -33,7 +33,6 @@ const fileTreeRef = ref();
 const props = defineProps<IFileBoardProps>();
 const fileTreeData = ref<FileTreeItem[]>([]);
 const handleNodeClick = (data: FileTreeItem, node: Node) => {
-  console.log('data', data);
   
   // const filePathArr = computedPath(node);
   // // ['apps', 'server', 'app.ts']

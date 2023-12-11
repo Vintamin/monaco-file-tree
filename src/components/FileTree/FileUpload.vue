@@ -35,7 +35,6 @@ async function exportFile() {
         //   message: "已导出",
         //   type: "success"
         // });
-        console.log('res', res);
     } catch(error) {
         console.error(error);
     }
@@ -65,9 +64,6 @@ async function handleFolderUpload(event) {
       const part = parts[j];
       const isDirectory = j < parts.length - 1;
           // path:  apps/server/app.ts
-          console.log('parts', parts);
-          
-    
 
       let node: FileTreeItem | undefined = currentLevel.find((item) => item.label === part);
       // 如果当前层级没有此节点
@@ -96,8 +92,6 @@ async function handleFolderUpload(event) {
       }
     }
   }
-
-  console.log(fileTree);
   // 在这里可以对 fileTree 进行进一步处理或返回
   emits("update:modelValue", fileTree);
 
