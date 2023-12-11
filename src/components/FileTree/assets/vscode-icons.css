@@ -1,0 +1,177 @@
+:root {
+    --icon-size: 20px;
+}
+/*
+
+Folder and file icon classes using vscode icons
+
+*/
+
+
+
+/*********************************
+            FOLDER ICONS
+*********************************/
+
+.folder-icon::before {
+    content: url("./vscode-icons/default_folder.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.folder_type_css::before {
+    content: url("./vscode-icons/folder_type_css.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+ .folder_type_js::before {
+    content: url("./vscode-icons/folder_type_js.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+
+.folder_type_images::before {
+    content: url("./vscode-icons/folder_type_images.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+
+
+ .folder_type_public::before {
+    content: url("./vscode-icons/folder_type_public.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+
+ .folder_type_model::before {
+    content: url("./vscode-icons/folder_type_model.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+
+.folder_type_controller::before {
+    content: url("./vscode-icons/folder_type_controller.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+
+ .folder_type_view::before {
+    content: url("./vscode-icons/folder_type_view.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+
+
+.folder_type_template::before {
+    content: url("./vscode-icons/folder_type_template.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+
+
+
+/*********************************
+            FILE ICONS
+*********************************/
+
+
+.file_type_html::before {
+    content: url("./vscode-icons/file_type_html.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+
+.file_type_js::before {
+    content: url("./vscode-icons/file_type_js.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+.file_type_ts::before {
+    content: url("./vscode-icons/file_type_ts.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+.file_type_vue::before {
+    content: url("./vscode-icons/file_type_vue.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+
+.file_type_css::before {
+    content: url("./vscode-icons/file_type_css.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.file_type_text::before {
+    content: url("./vscode-icons/file_type_text.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.file_type_json::before {
+    content: url("./vscode-icons/file_type_json.svg")!important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.file_type_image::before {
+    content: url("./vscode-icons/file_type_image.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.file_type_favicon::before {
+    content: url("./vscode-icons/file_type_favicon.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.file_type_markdown::before {
+    content: url("./vscode-icons/file_type_markdown.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.file_type_npm::before {
+    content: url("./vscode-icons/file_type_npm.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.file_type_license::before {
+    content: url("./vscode-icons/file_type_license.svg") !important;
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
